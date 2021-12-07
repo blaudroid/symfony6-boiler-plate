@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  ads-for-shop:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - ../:/var/www/html
