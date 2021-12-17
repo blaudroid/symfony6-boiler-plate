@@ -1,6 +1,6 @@
 version: "3.3"
 services:
-  ads-for-shop:
+  symfony-boiler-plate:
     build: .
     ports:
       - "80:80"

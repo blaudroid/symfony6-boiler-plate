@@ -25,9 +25,9 @@ RUN a2enmod rewrite
 RUN a2dissite 000-default
 RUN rm -rf /etc/apache2/sites-available
 RUN mkdir /etc/apache2/sites-available
-COPY ./a2conf/ads-for-shop.conf /etc/apache2/sites-available
+COPY ./a2conf/symfony-boiler-plate.conf /etc/apache2/sites-available
 COPY ./a2conf/apache2.conf /etc/apache2/
-RUN a2ensite ads-for-shop.conf
+RUN a2ensite symfony-boiler-plate.conf
 RUN mkdir /var/www/html/public
 
 #Initializing App
